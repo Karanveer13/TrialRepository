@@ -27,7 +27,7 @@ if os.path.isfile(dotenv_file):
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = os.environ['SECRET_KEY']
-SECRET_KEY = 'django-insecure-e7q(5c-afv!mt0eojty0+9q1x9y9h$skyal&&)1=rkbgn!8rp^'
+# SECRET_KEY = 'django-insecure-e7q(5c-afv!mt0eojty0+9q1x9y9h$skyal&&)1=rkbgn!8rp^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
@@ -96,7 +96,8 @@ WSGI_APPLICATION = 'trial.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ['ENGINE'],
+        # 'ENGINE': os.environ['ENGINE'],
+        'ENGINE': 'django.db.backends.postgresql',
         'HOST': os.environ['HOST'],
         'NAME': os.environ['NAME'],
         'USER': os.environ['USER'],
