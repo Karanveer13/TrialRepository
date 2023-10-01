@@ -98,12 +98,12 @@ DATABASES = {
     'default': {
         # 'ENGINE': os.environ['ENGINE'],
         'ENGINE': 'django.db.backends.postgresql',
-        'URL': os.environ('DATABASE_URL'),
-        'HOST': os.environ['PGHOST'],
-        'NAME': os.environ['PGDATABASE'],
-        'USER': os.environ['PGUSER'],
-        'PASSWORD': os.environ['PGPASSWORD'],
-        'PORT': os.environ['PGPORT'],
+        'URL': os.getenv('DATABASE_URL'),
+        'HOST': os.getenv['PGHOST'],
+        'NAME': os.getenv['PGDATABASE'],
+        'USER': os.getenv['PGUSER'],
+        'PASSWORD': os.getenv['PGPASSWORD'],
+        'PORT': os.getenv['PGPORT'],
     }
 }
 # DATABASES = {
